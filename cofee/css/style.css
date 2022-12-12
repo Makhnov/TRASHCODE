@@ -17,9 +17,13 @@ body {
   height: 500Px;
   width: 750px;
   border: 1px solid black;
-  perspective: 700px;
+  perspective: 1000px;
   display: grid;
   place-content: center;
+}
+
+span {
+  box-shadow: 0px 0px 4px 3px rgba(245, 245, 245, 0.2);
 }
 
 #sc {
@@ -27,10 +31,7 @@ body {
   position: relative;
   height: 200px;
   width: 200px;
-  border: 1px solid rgb(0, 0, 0);
-  -webkit-animation: soucoupe 20s linear infinite;
-          animation: soucoupe 20s linear infinite;
-  transform: rotateX(70deg);
+  transform: rotateX(75deg);
 }
 #sc #sc1 {
   position: relative;
@@ -40,611 +41,613 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  border: 1px solid whitesmoke;
   transform: translateZ(0px);
   color: hsl(0deg, 1%, 35%);
 }
 #sc #sc1 span:nth-of-type(1) {
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: 0px;
+  left: 0px;
   height: 198px;
   width: 198px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 99%);
+  border: 1px solid hsl(190deg, 10%, 99.5%);
   transform: translateZ(-0.2px);
 }
 #sc #sc1 span:nth-of-type(2) {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 1px;
+  left: 1px;
   height: 196px;
   width: 196px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 98%);
+  border: 1px solid hsl(190deg, 10%, 99%);
   transform: translateZ(-0.4px);
 }
 #sc #sc1 span:nth-of-type(3) {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 2px;
+  left: 2px;
   height: 194px;
   width: 194px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 97%);
+  border: 1px solid hsl(190deg, 10%, 98.5%);
   transform: translateZ(-0.6px);
 }
 #sc #sc1 span:nth-of-type(4) {
   position: absolute;
-  top: 4px;
-  left: 4px;
+  top: 3px;
+  left: 3px;
   height: 192px;
   width: 192px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 96%);
+  border: 1px solid hsl(190deg, 10%, 98%);
   transform: translateZ(-0.8px);
 }
 #sc #sc1 span:nth-of-type(5) {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 4px;
+  left: 4px;
   height: 190px;
   width: 190px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 95%);
+  border: 1px solid hsl(190deg, 10%, 97.5%);
   transform: translateZ(-1px);
 }
 #sc #sc1 span:nth-of-type(6) {
   position: absolute;
-  top: 6px;
-  left: 6px;
+  top: 5px;
+  left: 5px;
   height: 188px;
   width: 188px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 94%);
+  border: 1px solid hsl(190deg, 10%, 97%);
   transform: translateZ(-1.2px);
 }
 #sc #sc1 span:nth-of-type(7) {
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 6px;
+  left: 6px;
   height: 186px;
   width: 186px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 93%);
+  border: 1px solid hsl(190deg, 10%, 96.5%);
   transform: translateZ(-1.4px);
 }
 #sc #sc1 span:nth-of-type(8) {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 7px;
+  left: 7px;
   height: 184px;
   width: 184px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 92%);
+  border: 1px solid hsl(190deg, 10%, 96%);
   transform: translateZ(-1.6px);
 }
 #sc #sc1 span:nth-of-type(9) {
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 8px;
+  left: 8px;
   height: 182px;
   width: 182px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 91%);
+  border: 1px solid hsl(190deg, 10%, 95.5%);
   transform: translateZ(-1.8px);
 }
 #sc #sc1 span:nth-of-type(10) {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 9px;
+  left: 9px;
   height: 180px;
   width: 180px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 90%);
+  border: 1px solid hsl(190deg, 10%, 95%);
   transform: translateZ(-2px);
 }
 #sc #sc1 span:nth-of-type(11) {
   position: absolute;
-  top: 11px;
-  left: 11px;
+  top: 10px;
+  left: 10px;
   height: 178px;
   width: 178px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 89%);
+  border: 1px solid hsl(190deg, 10%, 94.5%);
   transform: translateZ(-2.2px);
 }
 #sc #sc1 span:nth-of-type(12) {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 11px;
+  left: 11px;
   height: 176px;
   width: 176px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 88%);
+  border: 1px solid hsl(190deg, 10%, 94%);
   transform: translateZ(-2.4px);
 }
 #sc #sc1 span:nth-of-type(13) {
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 12px;
+  left: 12px;
   height: 174px;
   width: 174px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 87%);
+  border: 1px solid hsl(190deg, 10%, 93.5%);
   transform: translateZ(-2.6px);
 }
 #sc #sc1 span:nth-of-type(14) {
   position: absolute;
-  top: 14px;
-  left: 14px;
+  top: 13px;
+  left: 13px;
   height: 172px;
   width: 172px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 86%);
+  border: 1px solid hsl(190deg, 10%, 93%);
   transform: translateZ(-2.8px);
 }
 #sc #sc1 span:nth-of-type(15) {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 14px;
+  left: 14px;
   height: 170px;
   width: 170px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 85%);
+  border: 1px solid hsl(190deg, 10%, 92.5%);
   transform: translateZ(-3px);
 }
 #sc #sc1 span:nth-of-type(16) {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 15px;
+  left: 15px;
   height: 168px;
   width: 168px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 84%);
+  border: 1px solid hsl(190deg, 10%, 92%);
   transform: translateZ(-3.2px);
 }
 #sc #sc1 span:nth-of-type(17) {
   position: absolute;
-  top: 17px;
-  left: 17px;
+  top: 16px;
+  left: 16px;
   height: 166px;
   width: 166px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 83%);
+  border: 1px solid hsl(190deg, 10%, 91.5%);
   transform: translateZ(-3.4px);
 }
 #sc #sc1 span:nth-of-type(18) {
   position: absolute;
-  top: 18px;
-  left: 18px;
+  top: 17px;
+  left: 17px;
   height: 164px;
   width: 164px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 82%);
+  border: 1px solid hsl(190deg, 10%, 91%);
   transform: translateZ(-3.6px);
 }
 #sc #sc1 span:nth-of-type(19) {
   position: absolute;
-  top: 19px;
-  left: 19px;
+  top: 18px;
+  left: 18px;
   height: 162px;
   width: 162px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 81%);
+  border: 1px solid hsl(190deg, 10%, 90.5%);
   transform: translateZ(-3.8px);
 }
 #sc #sc1 span:nth-of-type(20) {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 19px;
+  left: 19px;
   height: 160px;
   width: 160px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 80%);
+  border: 1px solid hsl(190deg, 10%, 90%);
   transform: translateZ(-4px);
 }
 #sc #sc1 span:nth-of-type(21) {
   position: absolute;
-  top: 21px;
-  left: 21px;
+  top: 20px;
+  left: 20px;
   height: 158px;
   width: 158px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 79%);
+  border: 1px solid hsl(190deg, 10%, 89.5%);
   transform: translateZ(-4.2px);
 }
 #sc #sc1 span:nth-of-type(22) {
   position: absolute;
-  top: 22px;
-  left: 22px;
+  top: 21px;
+  left: 21px;
   height: 156px;
   width: 156px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 78%);
+  border: 1px solid hsl(190deg, 10%, 89%);
   transform: translateZ(-4.4px);
 }
 #sc #sc1 span:nth-of-type(23) {
   position: absolute;
-  top: 23px;
-  left: 23px;
+  top: 22px;
+  left: 22px;
   height: 154px;
   width: 154px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 77%);
+  border: 1px solid hsl(190deg, 10%, 88.5%);
   transform: translateZ(-4.6px);
 }
 #sc #sc1 span:nth-of-type(24) {
   position: absolute;
-  top: 24px;
-  left: 24px;
+  top: 23px;
+  left: 23px;
   height: 152px;
   width: 152px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 76%);
+  border: 1px solid hsl(190deg, 10%, 88%);
   transform: translateZ(-4.8px);
 }
 #sc #sc1 span:nth-of-type(25) {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 24px;
+  left: 24px;
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 75%);
+  border: 1px solid hsl(190deg, 10%, 87.5%);
   transform: translateZ(-5px);
 }
 #sc #sc1 span:nth-of-type(26) {
   position: absolute;
-  top: 26px;
-  left: 26px;
+  top: 25px;
+  left: 25px;
   height: 148px;
   width: 148px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 74%);
+  border: 1px solid hsl(190deg, 10%, 87%);
   transform: translateZ(-5.2px);
 }
 #sc #sc1 span:nth-of-type(27) {
   position: absolute;
-  top: 27px;
-  left: 27px;
+  top: 26px;
+  left: 26px;
   height: 146px;
   width: 146px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 73%);
+  border: 1px solid hsl(190deg, 10%, 86.5%);
   transform: translateZ(-5.4px);
 }
 #sc #sc1 span:nth-of-type(28) {
   position: absolute;
-  top: 28px;
-  left: 28px;
+  top: 27px;
+  left: 27px;
   height: 144px;
   width: 144px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 72%);
+  border: 1px solid hsl(190deg, 10%, 86%);
   transform: translateZ(-5.6px);
 }
 #sc #sc1 span:nth-of-type(29) {
   position: absolute;
-  top: 29px;
-  left: 29px;
+  top: 28px;
+  left: 28px;
   height: 142px;
   width: 142px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 71%);
+  border: 1px solid hsl(190deg, 10%, 85.5%);
   transform: translateZ(-5.8px);
 }
 #sc #sc1 span:nth-of-type(30) {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 29px;
+  left: 29px;
   height: 140px;
   width: 140px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 70%);
+  border: 1px solid hsl(190deg, 10%, 85%);
   transform: translateZ(-6px);
 }
 #sc #sc1 span:nth-of-type(31) {
   position: absolute;
-  top: 31px;
-  left: 31px;
+  top: 30px;
+  left: 30px;
   height: 138px;
   width: 138px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 69%);
+  border: 1px solid hsl(190deg, 10%, 84.5%);
   transform: translateZ(-6.2px);
 }
 #sc #sc1 span:nth-of-type(32) {
   position: absolute;
-  top: 32px;
-  left: 32px;
+  top: 31px;
+  left: 31px;
   height: 136px;
   width: 136px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 68%);
+  border: 1px solid hsl(190deg, 10%, 84%);
   transform: translateZ(-6.4px);
 }
 #sc #sc1 span:nth-of-type(33) {
   position: absolute;
-  top: 33px;
-  left: 33px;
+  top: 32px;
+  left: 32px;
   height: 134px;
   width: 134px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 67%);
+  border: 1px solid hsl(190deg, 10%, 83.5%);
   transform: translateZ(-6.6px);
 }
 #sc #sc1 span:nth-of-type(34) {
   position: absolute;
-  top: 34px;
-  left: 34px;
+  top: 33px;
+  left: 33px;
   height: 132px;
   width: 132px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 66%);
+  border: 1px solid hsl(190deg, 10%, 83%);
   transform: translateZ(-6.8px);
 }
 #sc #sc1 span:nth-of-type(35) {
   position: absolute;
-  top: 35px;
-  left: 35px;
+  top: 34px;
+  left: 34px;
   height: 130px;
   width: 130px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 65%);
+  border: 1px solid hsl(190deg, 10%, 82.5%);
   transform: translateZ(-7px);
 }
 #sc #sc1 span:nth-of-type(36) {
   position: absolute;
-  top: 36px;
-  left: 36px;
+  top: 35px;
+  left: 35px;
   height: 128px;
   width: 128px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 64%);
+  border: 1px solid hsl(190deg, 10%, 82%);
   transform: translateZ(-7.2px);
 }
 #sc #sc1 span:nth-of-type(37) {
   position: absolute;
-  top: 37px;
-  left: 37px;
+  top: 36px;
+  left: 36px;
   height: 126px;
   width: 126px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 63%);
+  border: 1px solid hsl(190deg, 10%, 81.5%);
   transform: translateZ(-7.4px);
 }
 #sc #sc1 span:nth-of-type(38) {
   position: absolute;
-  top: 38px;
-  left: 38px;
+  top: 37px;
+  left: 37px;
   height: 124px;
   width: 124px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 62%);
+  border: 1px solid hsl(190deg, 10%, 81%);
   transform: translateZ(-7.6px);
 }
 #sc #sc1 span:nth-of-type(39) {
   position: absolute;
-  top: 39px;
-  left: 39px;
+  top: 38px;
+  left: 38px;
   height: 122px;
   width: 122px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 61%);
+  border: 1px solid hsl(190deg, 10%, 80.5%);
   transform: translateZ(-7.8px);
 }
 #sc #sc1 span:nth-of-type(40) {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 39px;
+  left: 39px;
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 60%);
+  border: 1px solid hsl(190deg, 10%, 80%);
   transform: translateZ(-8px);
 }
 #sc #sc1 span:nth-of-type(41) {
   position: absolute;
-  top: 41px;
-  left: 41px;
+  top: 40px;
+  left: 40px;
   height: 118px;
   width: 118px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 59%);
+  border: 1px solid hsl(190deg, 10%, 79.5%);
   transform: translateZ(-8.2px);
 }
 #sc #sc1 span:nth-of-type(42) {
   position: absolute;
-  top: 42px;
-  left: 42px;
+  top: 41px;
+  left: 41px;
   height: 116px;
   width: 116px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 58%);
+  border: 1px solid hsl(190deg, 10%, 79%);
   transform: translateZ(-8.4px);
 }
 #sc #sc1 span:nth-of-type(43) {
   position: absolute;
-  top: 43px;
-  left: 43px;
+  top: 42px;
+  left: 42px;
   height: 114px;
   width: 114px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 57%);
+  border: 1px solid hsl(190deg, 10%, 78.5%);
   transform: translateZ(-8.6px);
 }
 #sc #sc1 span:nth-of-type(44) {
   position: absolute;
-  top: 44px;
-  left: 44px;
+  top: 43px;
+  left: 43px;
   height: 112px;
   width: 112px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 56%);
+  border: 1px solid hsl(190deg, 10%, 78%);
   transform: translateZ(-8.8px);
 }
 #sc #sc1 span:nth-of-type(45) {
   position: absolute;
-  top: 45px;
-  left: 45px;
+  top: 44px;
+  left: 44px;
   height: 110px;
   width: 110px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 55%);
+  border: 1px solid hsl(190deg, 10%, 77.5%);
   transform: translateZ(-9px);
 }
 #sc #sc1 span:nth-of-type(46) {
   position: absolute;
-  top: 46px;
-  left: 46px;
+  top: 45px;
+  left: 45px;
   height: 108px;
   width: 108px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 54%);
+  border: 1px solid hsl(190deg, 10%, 77%);
   transform: translateZ(-9.2px);
 }
 #sc #sc1 span:nth-of-type(47) {
   position: absolute;
-  top: 47px;
-  left: 47px;
+  top: 46px;
+  left: 46px;
   height: 106px;
   width: 106px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 53%);
+  border: 1px solid hsl(190deg, 10%, 76.5%);
   transform: translateZ(-9.4px);
 }
 #sc #sc1 span:nth-of-type(48) {
   position: absolute;
-  top: 48px;
-  left: 48px;
+  top: 47px;
+  left: 47px;
   height: 104px;
   width: 104px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 52%);
+  border: 1px solid hsl(190deg, 10%, 76%);
   transform: translateZ(-9.6px);
 }
 #sc #sc1 span:nth-of-type(49) {
   position: absolute;
-  top: 49px;
-  left: 49px;
+  top: 48px;
+  left: 48px;
   height: 102px;
   width: 102px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 51%);
+  border: 1px solid hsl(190deg, 10%, 75.5%);
   transform: translateZ(-9.8px);
 }
 #sc #sc1 span:nth-of-type(50) {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 49px;
+  left: 49px;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 50%);
+  border: 1px solid hsl(190deg, 10%, 75%);
   transform: translateZ(-10px);
 }
 #sc #sc1 span:nth-of-type(51) {
   position: absolute;
-  top: 51px;
-  left: 51px;
+  top: 50px;
+  left: 50px;
   height: 98px;
   width: 98px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 49%);
+  border: 1px solid hsl(190deg, 10%, 74.5%);
   transform: translateZ(-10.2px);
 }
 #sc #sc1 span:nth-of-type(52) {
   position: absolute;
-  top: 52px;
-  left: 52px;
+  top: 51px;
+  left: 51px;
   height: 96px;
   width: 96px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 48%);
+  border: 1px solid hsl(190deg, 10%, 74%);
   transform: translateZ(-10.4px);
 }
 #sc #sc1 span:nth-of-type(53) {
   position: absolute;
-  top: 53px;
-  left: 53px;
+  top: 52px;
+  left: 52px;
   height: 94px;
   width: 94px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 47%);
+  border: 1px solid hsl(190deg, 10%, 73.5%);
   transform: translateZ(-10.6px);
 }
 #sc #sc1 span:nth-of-type(54) {
   position: absolute;
-  top: 54px;
-  left: 54px;
+  top: 53px;
+  left: 53px;
   height: 92px;
   width: 92px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 46%);
+  border: 1px solid hsl(190deg, 10%, 73%);
   transform: translateZ(-10.8px);
 }
 #sc #sc1 span:nth-of-type(55) {
   position: absolute;
-  top: 55px;
-  left: 55px;
+  top: 54px;
+  left: 54px;
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 45%);
+  border: 1px solid hsl(190deg, 10%, 72.5%);
   transform: translateZ(-11px);
 }
 #sc #sc1 span:nth-of-type(56) {
   position: absolute;
-  top: 56px;
-  left: 56px;
+  top: 55px;
+  left: 55px;
   height: 88px;
   width: 88px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 44%);
+  border: 1px solid hsl(190deg, 10%, 72%);
   transform: translateZ(-11.2px);
 }
 #sc #sc1 span:nth-of-type(57) {
   position: absolute;
-  top: 57px;
-  left: 57px;
+  top: 56px;
+  left: 56px;
   height: 86px;
   width: 86px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 43%);
+  border: 1px solid hsl(190deg, 10%, 71.5%);
   transform: translateZ(-11.4px);
 }
 #sc #sc1 span:nth-of-type(58) {
   position: absolute;
-  top: 58px;
-  left: 58px;
+  top: 57px;
+  left: 57px;
   height: 84px;
   width: 84px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 42%);
+  border: 1px solid hsl(190deg, 10%, 71%);
   transform: translateZ(-11.6px);
 }
 #sc #sc1 span:nth-of-type(59) {
   position: absolute;
-  top: 59px;
-  left: 59px;
+  top: 58px;
+  left: 58px;
   height: 82px;
   width: 82px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 41%);
+  border: 1px solid hsl(190deg, 10%, 70.5%);
   transform: translateZ(-11.8px);
 }
 #sc #sc1 span:nth-of-type(60) {
   position: absolute;
-  top: 60px;
-  left: 60px;
+  top: 59px;
+  left: 59px;
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  border: 1px solid hsl(190deg, 10%, 40%);
+  border: 1px solid hsl(190deg, 10%, 70%);
   transform: translateZ(-12px);
 }
 #sc #sc2 {
   position: relative;
+  transform-style: preserve-3d;
   top: -140px;
   left: 60px;
   height: 80px;
@@ -653,6 +656,406 @@ body {
   border: 1px solid whitesmoke;
   transform: translateZ(-12px);
 }
+#sc #sc2 span:nth-of-type(1) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 79.5px;
+  width: 79.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 69.5%);
+  transform: translateZ(-0.25px);
+}
+#sc #sc2 span:nth-of-type(2) {
+  position: absolute;
+  top: 0.25px;
+  left: 0.25px;
+  height: 79px;
+  width: 79px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 69%);
+  transform: translateZ(-0.5px);
+}
+#sc #sc2 span:nth-of-type(3) {
+  position: absolute;
+  top: 0.5px;
+  left: 0.5px;
+  height: 78.5px;
+  width: 78.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 68.5%);
+  transform: translateZ(-0.75px);
+}
+#sc #sc2 span:nth-of-type(4) {
+  position: absolute;
+  top: 0.75px;
+  left: 0.75px;
+  height: 78px;
+  width: 78px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 68%);
+  transform: translateZ(-1px);
+}
+#sc #sc2 span:nth-of-type(5) {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 77.5px;
+  width: 77.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 67.5%);
+  transform: translateZ(-1.25px);
+}
+#sc #sc2 span:nth-of-type(6) {
+  position: absolute;
+  top: 1.25px;
+  left: 1.25px;
+  height: 77px;
+  width: 77px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 67%);
+  transform: translateZ(-1.5px);
+}
+#sc #sc2 span:nth-of-type(7) {
+  position: absolute;
+  top: 1.5px;
+  left: 1.5px;
+  height: 76.5px;
+  width: 76.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 66.5%);
+  transform: translateZ(-1.75px);
+}
+#sc #sc2 span:nth-of-type(8) {
+  position: absolute;
+  top: 1.75px;
+  left: 1.75px;
+  height: 76px;
+  width: 76px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 66%);
+  transform: translateZ(-2px);
+}
+#sc #sc2 span:nth-of-type(9) {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 75.5px;
+  width: 75.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 65.5%);
+  transform: translateZ(-2.25px);
+}
+#sc #sc2 span:nth-of-type(10) {
+  position: absolute;
+  top: 2.25px;
+  left: 2.25px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 65%);
+  transform: translateZ(-2.5px);
+}
+#sc #sc2 span:nth-of-type(11) {
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  height: 74.5px;
+  width: 74.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 64.5%);
+  transform: translateZ(-2.75px);
+}
+#sc #sc2 span:nth-of-type(12) {
+  position: absolute;
+  top: 2.75px;
+  left: 2.75px;
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 64%);
+  transform: translateZ(-3px);
+}
+#sc #sc2 span:nth-of-type(13) {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 73.5px;
+  width: 73.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 63.5%);
+  transform: translateZ(-3.25px);
+}
+#sc #sc2 span:nth-of-type(14) {
+  position: absolute;
+  top: 3.25px;
+  left: 3.25px;
+  height: 73px;
+  width: 73px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 63%);
+  transform: translateZ(-3.5px);
+}
+#sc #sc2 span:nth-of-type(15) {
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+  height: 72.5px;
+  width: 72.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 62.5%);
+  transform: translateZ(-3.75px);
+}
+#sc #sc2 span:nth-of-type(16) {
+  position: absolute;
+  top: 3.75px;
+  left: 3.75px;
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 62%);
+  transform: translateZ(-4px);
+}
+#sc #sc2 span:nth-of-type(17) {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 71.5px;
+  width: 71.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 61.5%);
+  transform: translateZ(-4.25px);
+}
+#sc #sc2 span:nth-of-type(18) {
+  position: absolute;
+  top: 4.25px;
+  left: 4.25px;
+  height: 71px;
+  width: 71px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 61%);
+  transform: translateZ(-4.5px);
+}
+#sc #sc2 span:nth-of-type(19) {
+  position: absolute;
+  top: 4.5px;
+  left: 4.5px;
+  height: 70.5px;
+  width: 70.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 60.5%);
+  transform: translateZ(-4.75px);
+}
+#sc #sc2 span:nth-of-type(20) {
+  position: absolute;
+  top: 4.75px;
+  left: 4.75px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 60%);
+  transform: translateZ(-5px);
+}
+#sc #sc2 span:nth-of-type(21) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 69.5px;
+  width: 69.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 59.5%);
+  transform: translateZ(-5.25px);
+}
+#sc #sc2 span:nth-of-type(22) {
+  position: absolute;
+  top: 5.25px;
+  left: 5.25px;
+  height: 69px;
+  width: 69px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 59%);
+  transform: translateZ(-5.5px);
+}
+#sc #sc2 span:nth-of-type(23) {
+  position: absolute;
+  top: 5.5px;
+  left: 5.5px;
+  height: 68.5px;
+  width: 68.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 58.5%);
+  transform: translateZ(-5.75px);
+}
+#sc #sc2 span:nth-of-type(24) {
+  position: absolute;
+  top: 5.75px;
+  left: 5.75px;
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 58%);
+  transform: translateZ(-6px);
+}
+#sc #sc2 span:nth-of-type(25) {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  height: 67.5px;
+  width: 67.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 57.5%);
+  transform: translateZ(-6.25px);
+}
+#sc #sc2 span:nth-of-type(26) {
+  position: absolute;
+  top: 6.25px;
+  left: 6.25px;
+  height: 67px;
+  width: 67px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 57%);
+  transform: translateZ(-6.5px);
+}
+#sc #sc2 span:nth-of-type(27) {
+  position: absolute;
+  top: 6.5px;
+  left: 6.5px;
+  height: 66.5px;
+  width: 66.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 56.5%);
+  transform: translateZ(-6.75px);
+}
+#sc #sc2 span:nth-of-type(28) {
+  position: absolute;
+  top: 6.75px;
+  left: 6.75px;
+  height: 66px;
+  width: 66px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 56%);
+  transform: translateZ(-7px);
+}
+#sc #sc2 span:nth-of-type(29) {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 65.5px;
+  width: 65.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 55.5%);
+  transform: translateZ(-7.25px);
+}
+#sc #sc2 span:nth-of-type(30) {
+  position: absolute;
+  top: 7.25px;
+  left: 7.25px;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 55%);
+  transform: translateZ(-7.5px);
+}
+#sc #sc2 span:nth-of-type(31) {
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  height: 64.5px;
+  width: 64.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 54.5%);
+  transform: translateZ(-7.75px);
+}
+#sc #sc2 span:nth-of-type(32) {
+  position: absolute;
+  top: 7.75px;
+  left: 7.75px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 54%);
+  transform: translateZ(-8px);
+}
+#sc #sc2 span:nth-of-type(33) {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 63.5px;
+  width: 63.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 53.5%);
+  transform: translateZ(-8.25px);
+}
+#sc #sc2 span:nth-of-type(34) {
+  position: absolute;
+  top: 8.25px;
+  left: 8.25px;
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 53%);
+  transform: translateZ(-8.5px);
+}
+#sc #sc2 span:nth-of-type(35) {
+  position: absolute;
+  top: 8.5px;
+  left: 8.5px;
+  height: 62.5px;
+  width: 62.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 52.5%);
+  transform: translateZ(-8.75px);
+}
+#sc #sc2 span:nth-of-type(36) {
+  position: absolute;
+  top: 8.75px;
+  left: 8.75px;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 52%);
+  transform: translateZ(-9px);
+}
+#sc #sc2 span:nth-of-type(37) {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  height: 61.5px;
+  width: 61.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 51.5%);
+  transform: translateZ(-9.25px);
+}
+#sc #sc2 span:nth-of-type(38) {
+  position: absolute;
+  top: 9.25px;
+  left: 9.25px;
+  height: 61px;
+  width: 61px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 51%);
+  transform: translateZ(-9.5px);
+}
+#sc #sc2 span:nth-of-type(39) {
+  position: absolute;
+  top: 9.5px;
+  left: 9.5px;
+  height: 60.5px;
+  width: 60.5px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 50.5%);
+  transform: translateZ(-9.75px);
+}
+#sc #sc2 span:nth-of-type(40) {
+  position: absolute;
+  top: 9.75px;
+  left: 9.75px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 50%);
+  transform: translateZ(-10px);
+}
 #sc #sc3 {
   position: relative;
   top: -212px;
@@ -660,24 +1063,312 @@ body {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  border: 1px solid whitesmoke;
-  transform: translateZ(-20px);
+  border: 1px solid hsl(0deg, 0%, 65%);
+  transform: translateZ(-22px);
+}
+#sc #sc3 span:nth-of-type(1) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 52%);
+}
+#sc #sc3 span:nth-of-type(2) {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 54%);
+}
+#sc #sc3 span:nth-of-type(3) {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 56%);
+}
+#sc #sc3 span:nth-of-type(4) {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 58%);
+}
+#sc #sc3 span:nth-of-type(5) {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 60%);
+}
+#sc #sc3 span:nth-of-type(6) {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 62%);
+}
+#sc #sc3 span:nth-of-type(7) {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 64%);
+}
+#sc #sc3 span:nth-of-type(8) {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 66%);
+}
+#sc #sc3 span:nth-of-type(9) {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 68%);
+}
+#sc #sc3 span:nth-of-type(10) {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 70%);
+}
+#sc #sc3 span:nth-of-type(11) {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 72%);
+}
+#sc #sc3 span:nth-of-type(12) {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 74%);
+}
+#sc #sc3 span:nth-of-type(13) {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 76%);
+}
+#sc #sc3 span:nth-of-type(14) {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 78%);
+}
+#sc #sc3 span:nth-of-type(15) {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 80%);
+}
+#sc #sc3 span:nth-of-type(16) {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 82%);
+}
+#sc #sc3 span:nth-of-type(17) {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 84%);
+}
+#sc #sc3 span:nth-of-type(18) {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 86%);
+}
+#sc #sc3 span:nth-of-type(19) {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 88%);
+}
+#sc #sc3 span:nth-of-type(20) {
+  position: absolute;
+  top: 19px;
+  left: 19px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 90%);
+}
+#sc #sc3 span:nth-of-type(21) {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 92%);
+}
+#sc #sc3 span:nth-of-type(22) {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 94%);
+}
+#sc #sc3 span:nth-of-type(23) {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 96%);
+}
+#sc #sc3 span:nth-of-type(24) {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 98%);
+}
+#sc #sc3 span:nth-of-type(25) {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 100%);
+}
+#sc #sc3 span:nth-of-type(26) {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 100%);
+}
+#sc #sc3 span:nth-of-type(27) {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 100%);
+}
+#sc #sc3 span:nth-of-type(28) {
+  position: absolute;
+  top: 27px;
+  left: 27px;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 100%);
+}
+#sc #sc3 span:nth-of-type(29) {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 100%);
+}
+#sc #sc3 span:nth-of-type(30) {
+  position: absolute;
+  top: 29px;
+  left: 29px;
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  border: 1px solid hsl(190deg, 10%, 100%);
 }
 
 @-webkit-keyframes soucoupe {
-  from {
-    transform: rotateX(30deg);
+  0% {
+    transform: rotateX(66deg) rotateY(0deg);
   }
-  to {
-    transform: rotateX(120deg);
+  25% {
+    transform: rotateX(80deg) rotateY(12deg);
+  }
+  50% {
+    transform: rotateX(85deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(80deg) rotateY(-12deg);
+  }
+  100% {
+    transform: rotateX(66deg) rotateY(0deg);
   }
 }
 
 @keyframes soucoupe {
-  from {
-    transform: rotateX(30deg);
+  0% {
+    transform: rotateX(66deg) rotateY(0deg);
   }
-  to {
-    transform: rotateX(120deg);
+  25% {
+    transform: rotateX(80deg) rotateY(12deg);
+  }
+  50% {
+    transform: rotateX(85deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(80deg) rotateY(-12deg);
+  }
+  100% {
+    transform: rotateX(66deg) rotateY(0deg);
   }
 }/*# sourceMappingURL=style.css.map */

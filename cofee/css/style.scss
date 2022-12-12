@@ -17,9 +17,13 @@ body {
     height:500Px;
     width: 750px;
     border: 1px solid black;
-    perspective: 700px;
+    perspective: 1000px;
     display: grid;
     place-content: center;
+}
+
+span {
+    box-shadow: 0px 0px 4px 3px rgba(245, 245, 245, 0.20);
 }
 
 #sc {
@@ -27,10 +31,8 @@ body {
     position: relative;
     height:200px;
     width: 200px;
-    border:1px solid rgb(0, 0, 0);
-    animation: soucoupe 20s linear infinite;
-    transform: rotateX(70deg);
-
+    // animation: soucoupe 10s linear infinite;
+    transform: rotateX(75deg);
 
     #sc1 {
         position: relative;
@@ -40,18 +42,19 @@ body {
         height: 200px;
         width: 200px;
         border-radius: 50%;
+        border: 1px solid whitesmoke;
         transform: translateZ(0px);
         color:hsl(0, 1%, 35%);
 
         @for $i from 1 through 60 {
             span:nth-of-type(#{$i}) {
                 position: absolute;
-                top:$i * 1px;
-                left:$i * 1px;
+                top:(-1 + $i) * 1px;
+                left:(-1 + $i) * 1px;
                 height:(200 - (2 * $i))* 1px;
                 width: (200 - (2 * $i))* 1px;
                 border-radius: 50%;
-                border: 1px solid hsl(190, 10%, ((100 - $i) * 1%));
+                border: 1px solid hsl(190, 10%, ((100 - 0.5 * $i) * 1%));
                 transform: translateZ(-0.2px * $i) ;
             }
         }    
@@ -59,6 +62,7 @@ body {
 
     #sc2 {
         position: relative;
+        transform-style: preserve-3d;
         top:-140px;
         left:60px;
         height: 80px;
@@ -66,6 +70,19 @@ body {
         border-radius: 50%;
         border: 1px solid whitesmoke;
         transform: translateZ(-12px);
+
+        @for $i from 1 through 40 {
+            span:nth-of-type(#{$i}) {
+                position: absolute;
+                top:(-1 + $i) * .25px;
+                left:(-1 + $i) * .25px;
+                height:(80 - (.5 * $i))* 1px;
+                width: (80 - (.5 * $i))* 1px;
+                border-radius: 50%;
+                border: 1px solid hsl(190, 10%, ((70 - (0.5 *$i)) * 1%));
+                transform: translateZ(-.25px * $i);
+            }
+        }    
     }
 
     #sc3 {
@@ -75,17 +92,41 @@ body {
         height: 60px;
         width: 60px;
         border-radius: 50%;
-        border: 1px solid whitesmoke;
-        transform: translateZ(-20px);
+        border: 1px solid hsl(0, 0%, 65%);
+        transform: translateZ(-22px);
+
+        @for $i from 1 through 30 {
+            span:nth-of-type(#{$i}) {
+                position: absolute;
+                top:(-1 + $i) * 1px;
+                left:(-1 + $i) * 1px;
+                height:(60 - (2 * $i))* 1px;
+                width: (60 - (2 * $i))* 1px;
+                border-radius: 50%;
+                border: 1px solid hsl(190, 10%, ((50 + 2 * $i) * 1%));
+            }
+        }    
     }
 }
 
 @keyframes soucoupe {
-    from {
-        transform: rotateX(30deg);
+    0% {
+        transform: rotateX(66deg) rotateY(0deg);
     }
 
-    to {
-        transform: rotateX(120deg);
+    25% {
+        transform: rotateX(80deg) rotateY(12deg);
+    }
+
+    50% {
+        transform: rotateX(85deg) rotateY(0deg);
+    }
+
+    75% {
+        transform: rotateX(80deg) rotateY(-12deg);
+    }
+
+    100% {
+        transform: rotateX(66deg) rotateY(0deg);
     }
 }
