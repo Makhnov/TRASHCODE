@@ -1,7 +1,6 @@
 const space = " ";
 const br = "\n";
 
-
 /* ------------------------------------------------------------------------------------------------------------------------ */
 /* -------------------------------------------------------- PART 1 -------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -40,7 +39,6 @@ function getAge(str) {
         } 
     }
 }
-
 console.log(getAge("1998-01-05"));
 
 //2. 
@@ -56,7 +54,6 @@ function getMax(tab) {
     }
     return max;
 }
-
 console.log(getMax([10,11,1159,3,76,8,190,211,23,1]));
 
 //3. 
@@ -72,7 +69,6 @@ function getAges(tab) {
     }
     return tabAges;
 }
-
 console.log(getAges(['1978-01-05','1998-01-15','1938-12-25','1991-05-08','1925-01-05']));
 
 //4. 
@@ -97,7 +93,6 @@ function getDaysUntilBirthdays(tab) {
     }
     return tabAges;
 }
-
 console.log(getDaysUntilBirthdays(['1978-01-05','1998-01-15','1938-12-25','1991-05-08','1925-01-05']));
 
 /* ------------------------------------------------------------------------------------------------------------------------ */
@@ -115,6 +110,21 @@ console.log(getDaysUntilBirthdays(['1978-01-05','1998-01-15','1938-12-25','1991-
 
 const form = document.getElementById('login'); // On récupère le formulaire dans le DOM
 const spans = document.getElementsByTagName('span'); // On récupère tous les spans (collection) dans le DOM
+const inputs = document.getElementsByTagName('input'); // On récupère tous les inputs (collection) dans le DOM
+
+// Fonctions qui remettent le formulaire à zéro (avec un délai)
+function annuler() {
+    setTimeout(() => {
+    effacer()
+  }, "10")
+}
+function effacer() {
+    for (let i = 0; i < 4; i++) {
+        inputs[i].value = "";
+        spans[i].innerText = "";
+        spans[i].style.opacity = 0;
+    }
+}
 
 // Si un formulaire existe, on "intercepte" la validation du formulaire lors du submit
 if (form !== null) {
@@ -147,7 +157,6 @@ function formulaireOK(event) {
     let prenom = event.target[1].value; // On récupère la valeur du premier target (input : Prénom)
     
     if (confirm("Bienvenue " + prenom + space + nom + ", souhaitez-vous envoyer ce formulaire ?")) {
-        console.log("test");
     } else {
         event.preventDefault();
     }
@@ -157,26 +166,24 @@ function formulaireOK(event) {
 function affichage(tab) {
 
     const vide = [ // On créé les messages d'erreurs en cas de champs vide
-        "Le Nom est obligatoire",
-        "Le prénom est obligatoire",
-        "L'Age est obligatoire",
-        "L'adresse mail est obligatoire"];
+        "Veuillez entrer un nom de famille.",
+        "Veuillez entrer un prénom.",
+        "Veuillez entrer un âge.",
+        "Veuillez entrer une adresse e-mail."];
 
     const invalide = [ // On crée les messages d'erreurs en cas de saisie invalide
-        "Votre Nom est invalide",
-        "Votre Prénom est invalide",
-        "Votre Age est invalide",
-        "Votre adresse mail est invalide"];
+        "Le nom saisi est invalide !",
+        "Le prénom saisi est invalide !",
+        "L'âge saisi est invalide !",
+        "L'adresse mail saisie est invalide !"];
 
     const erreur = [0,invalide,vide]; // On synthétise les messages d'erreurs dans un seul tableau
-
-    console.log(erreur);
-    console.log(tab);
 
     for (let i = 0; i < tab.length; i++) {
         if (tab[i] !== 0) {
             let texte = erreur[tab[i]][i];
             spans[i].innerText = texte;
+            spans[i].style.opacity = 1;
         }
     }
 }
@@ -229,6 +236,8 @@ function verifNom(str) {
         // On compare les caractères autorisés à l'input utilisateur
         if (nomRegex.test(str)) { // On renvoie un tableau avec l'input utilisateur & le résultat de la vérification
             spans[0].innerText = "";
+            spans[0].style.opacity = 0;
+
             return [str,true]; // Le nom entré par l'utilisateur est valide
         } else {
             return [str,false,1];
@@ -247,6 +256,7 @@ function verifPrenom(str) {
         // On compare les caractères autorisés à l'input utilisateur
         if (prenomRegex.test(str)) { // On renvoie un tableau avec l'input utilisateur & le résultat de la vérification
             spans[1].innerText = "";
+            spans[1].style.opacity = 0;
             return [str,true]; // Le prénom entré par l'utilisateur est valide
         } else {
             return [str,false,1];
@@ -277,6 +287,7 @@ function verifAge(str) {
 
         if (age >= 0 && age <= 125) {
             spans[2].innerText = "";
+            spans[2].style.opacity = 0;
             return [age,true]; // L'age entré par l'utilisateur est valide
         } else {
             return [str,false,1]; // L'age n'est pas compris entre 0 et 125 ans
@@ -296,6 +307,7 @@ function verifMail(str) {
         // On compare les caractères autorisés à l'input utilisateur
         if (mailRegex.test(str)) { // On renvoie un tableau avec l'input utilisateur & le résultat de la vérification
             spans[3].innerText = "";
+            spans[3].style.opacity = 0;
             return [str,true]; // Le mail entré par l'utilisateur est valide
         } else {
             return [str,false,1];
@@ -311,8 +323,9 @@ function verifMail(str) {
 // nombre 1, nombre 2 et opération (sélection avec les options "addition", "soustraction", 
 // "multiplication" et "division")
 // Ajoutez un bouton de soumission "Calculer"
-// Lorsque l'utilisateur soumet le formulaire, effectuez le calcul 
-// sélectionné avec les deux nombres et affichez le résultat dans une boîte de dialogue
+// Lorsque l'utilisateur soumet le formulaire, effectuez le calcul sélectionné
+// avec les deux nombres et affichez le résultat dans une boîte de dialogue
+
 
 // Exercice 3 :
 // Créez une page HTML avec un titre "Exercice JavaScript : Changement de couleur de fond"
